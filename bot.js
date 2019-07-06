@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
+var prefix = "_"
  
 client.on('message',async message => {
   var room;
@@ -73,4 +73,4 @@ client.on('message',async message => {
   }
 });
  
-client.login('NTU4NjMzNzI3MjkxNTU1ODcw.XOtC_A.hKNRUxWxDJCKIPLe6gD_jp1m-NU');
+client.login(process.env.BOT_TOKEN);
